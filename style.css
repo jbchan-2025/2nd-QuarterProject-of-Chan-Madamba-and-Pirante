@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #0b6623;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(rgba(11,102,35,0.8), rgba(11,102,35,0.8)),
+                url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #0b6623;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #09511a;
+}
+
+
+footer {
+    background: linear-gradient(135deg, #0b6623, #0e7a2c);
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    position: relative;
+    border-top: 3px solid rgba(255,255,255,0.15);
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: rgba(255,255,255,0.5);
+    filter: blur(5px);
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
+    transition: 0.3s ease;
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
+}
+
+
+footer p:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
